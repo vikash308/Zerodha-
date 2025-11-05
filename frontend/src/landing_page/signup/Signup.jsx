@@ -8,7 +8,7 @@ const Signup = () => {
     password:""
   })
   let [message, setMessage]= useState("")
-  let url = process.env.BACKEND_URL;
+  let url = process.env.REACT_APP_BACKEND_URL;;
   function handleChange(e){
       setData((data)=>{
         return{...data,[ e.target.name]:e.target.value}

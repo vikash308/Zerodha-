@@ -10,7 +10,7 @@ import "./BuyActionWindow.css";
 const BuyActionWindow = ({ uid }) => {
   const [stockQuantity, setStockQuantity] = useState(1);
   const [stockPrice, setStockPrice] = useState(0.0);
-  let url = process.env.BACKEND_URL;
+  let url = process.env.REACT_APP_BACKEND_URL;
 
   const handleBuyClick = () => {
     axios.post(`${url}/newOrder`, {

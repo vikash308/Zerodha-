@@ -7,7 +7,7 @@ import { VerticalGraph } from "./VerticalGraph";
 const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
   const token = localStorage.getItem("token");
-  let url = process.env.BACKEND_URL;
+  let url = process.env.REACT_APP_BACKEND_URL;
   useEffect(() => {
     axios.get(`${url}/allHoldings`,{
       headers: {

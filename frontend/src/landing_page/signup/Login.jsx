@@ -7,8 +7,9 @@ const Login = () => {
     password:""
   })
   let [message, setMessage]= useState("")
-  let url = process.env.BACKEND_URL;
-  let url2 = process.env.FRONTEND_URL;
+  let url = process.env.REACT_APP_BACKEND_URL;
+  let url2 = process.env.REACT_APP_FRONTEND_URL;
+  console.log(url)
     function handleChange(e){
         setData((data)=>{
           return{...data,[ e.target.name]:e.target.value}

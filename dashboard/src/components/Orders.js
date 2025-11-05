@@ -6,7 +6,7 @@ const Orders = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  let url = process.env.BACKEND_URL;
+  let url = process.env.REACT_APP_BACKEND_URL;
   useEffect(() => {
     const fetchOrders = async () => {
       try {

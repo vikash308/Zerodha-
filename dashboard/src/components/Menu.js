@@ -6,7 +6,7 @@ const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState(0);
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
   const name = localStorage.getItem("name") || "User";
-  let url = process.env.FRONTEND_URL;
+  let url = process.env.REACT_APP_FRONTEND_URL;
 
   const handleMenuClick = (index) => setSelectedMenu(index);
   const handleProfileClick = () => setIsProfileDropdownOpen(!isProfileDropdownOpen);

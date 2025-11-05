@@ -5,7 +5,7 @@ import Dashboard from "./Dashboard";
 import TopBar from "./TopBar";
 
 const Home = () => {
-  let url = process.env.FRONTEND_URL;
+  let url = process.env.REACT_APP_FRONTEND_URL;
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const token = params.get("token");
