@@ -9,7 +9,7 @@ const Holdings = () => {
   const token = localStorage.getItem("token");
   let url = process.env.REACT_APP_BACKEND_URL;
   useEffect(() => {
-    axios.get(`${url}/allHoldings`,{
+    axios.get(`${url}allHoldings`,{
       headers: {
         Authorization: `Bearer ${token}`,
       },
